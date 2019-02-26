@@ -173,7 +173,8 @@ print("error score : {}".format((628+368) / 12357))
 ```
 
 
-** Stacking + XG boost**
+**Stacking + XG boost**
+
 Mise en place stacking : on intègre les prédictions des 3 modèles précédents à notre dataset
 
 ```
