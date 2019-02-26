@@ -78,11 +78,11 @@ nb_1 = y_count.where(y_count == 1).count()
 print("nb_0 : {} soit {} % \nnb_1 : {} soit {} %".format(nb_0, (nb_0 / y_count.count()), nb_1, (nb_1 / y_count.count())))
 ```
 
-**important : 88% des personnes ont refusées l'offre. Nous devrons donc obtenir plus de 88% de prédictions correctes pour être meilleur que le hasard.**
+***important : 88% des personnes ont refusées l'offre. Nous devrons donc obtenir plus de 88% de prédictions correctes pour être meilleur que le hasard.***
 
 
 
-Premier modèle de classification - "Random forest"
+**Premier modèle de classification - "Random forest"**
 * Score obtenu : 91,88 %
 
 Résultat à améliorer.
@@ -119,7 +119,7 @@ y_predict_rf =  rf_gs.predict(X_test)
 confusion_matrix(y_test, y_predict_rf)
 ```
 
-Modèle de classification - "Regression logistique"
+**Modèle de classification - "Regression logistique"**
 * Score obtenu : 93,39 %
 
 Gain de précision mais à améliorer.
@@ -149,7 +149,7 @@ confusion_matrix(y_test, y_predict_lr)
 print("error score : {}".format((800+285) / 12357))
 ```
 
-Modèle de classification - "Gradient boosting"
+**Modèle de classification - "Gradient boosting"**
 * Score obtenu : 94,71 %
 
 Gain de précision + réduction des faux négatifs
@@ -173,7 +173,7 @@ print("error score : {}".format((628+368) / 12357))
 ```
 
 
-
+** Stacking + XG boost**
 Mise en place stacking : on intègre les prédictions des 3 modèles précédents à notre dataset
 
 ```
