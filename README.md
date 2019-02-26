@@ -31,10 +31,10 @@ y = df.iloc[:,-1]
 
 
 Etape 2, preprocessing des données avec :
-=> vérification de présence de valeur nulles ou non
-=> transformation des variables catégoriques
-=> feature scaling
-=> Split du dataset en train et test
+* vérification de présence de valeur nulles ou non
+* transformation des variables catégoriques
+* feature scaling
+* Split du dataset en train et test
 
 ```
 """ Vérification si valeur null """
@@ -83,7 +83,7 @@ print("nb_0 : {} soit {} % \nnb_1 : {} soit {} %".format(nb_0, (nb_0 / y_count.c
 
 
 Premier modèle de classification - "Random forest"
-=> Score obtenu : 91,88 %
+* Score obtenu : 91,88 %
 
 Résultat à améliorer.
 
@@ -120,7 +120,7 @@ confusion_matrix(y_test, y_predict_rf)
 ```
 
 Modèle de classification - "Regression logistique"
-=> Score obtenu : 93,39 %
+* Score obtenu : 93,39 %
 
 Gain de précision mais à améliorer.
 
@@ -150,7 +150,7 @@ print("error score : {}".format((800+285) / 12357))
 ```
 
 Modèle de classification - "Gradient boosting"
-=> Score obtenu : 94,71 %
+* Score obtenu : 94,71 %
 
 Gain de précision + réduction des faux négatifs
 
@@ -192,7 +192,7 @@ X_train_2, X_test_2, y_train_2, y_test_2 = train_test_split(X_2, y, test_size = 
 
 
 Utilisation du modèle "XG Boost" sur notre nouveau dataset
-=> Score final obtenu : 94,97 %
+* Score final obtenu : 94,97 %
 
 ```
 from xgboost import XGBClassifier
